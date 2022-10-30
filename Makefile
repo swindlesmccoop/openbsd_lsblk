@@ -9,6 +9,6 @@ prints:
 clean:
 	rm *.o *.gch lsblk
 install: all
-	install -Dm755 /usr/local/bin/lsblk
+	install -Dm755 lsblk /usr/local/bin/lsblk
 sinstall: all
 	echo "installing with setuid. I wouldn't trust it"; cp ./lsblk /usr/sbin/lsblk && chmod +s /usr/sbin/lsblk
